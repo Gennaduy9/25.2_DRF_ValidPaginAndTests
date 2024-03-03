@@ -1,0 +1,89 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$NB56iqF8CdJQ5R8CTFbC9P$VU08fy6TQML9Qew5gGigEb65THKeoFF/dN5SkeVFbVs=",
+      "last_login": "2024-02-11T20:08:57Z",
+      "is_superuser": true,
+      "first_name": "Admin",
+      "last_name": "SkyPro",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-02-11T19:19:13Z",
+      "email": "admin@mail.com",
+      "phone": null,
+      "avatar": "",
+      "country": null,
+      "role": "moderator",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$Cd9nUjfgif25rqbtjOq6j3$KtIqr8lGaua7c/xid0WLk9o1bg2p+FpwxZwoJf1eLwI=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-02-11T19:19:14.039Z",
+      "email": "user1@sky.com",
+      "phone": null,
+      "avatar": "",
+      "country": null,
+      "role": "member",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$Psnn2QCYSeGzUoXllA30sL$1lMMAO+5urat5xQPqZEZVPYB/S+kaKewqnar4d143M0=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-02-11T19:19:14.284Z",
+      "email": "user2@sky.com",
+      "phone": null,
+      "avatar": "",
+      "country": null,
+      "role": "member",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.payment",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "pay_date": "2024-02-11",
+      "pay_course": 1,
+      "pay_lesson": 1,
+      "money": 10,
+      "pay_method": "transfer"
+    }
+  },
+  {
+    "model": "users.payment",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "pay_date": "2024-02-11",
+      "pay_course": 1,
+      "pay_lesson": 2,
+      "money": 20,
+      "pay_method": "cash"
+    }
+  }
+]
