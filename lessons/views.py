@@ -1,5 +1,5 @@
 from rest_framework import generics
-from rest_framework.permissions import AllowAny
+from rest_framework.permissions import AllowAny, IsAuthenticated
 
 from lessons.models import Lesson
 from lessons.paginators import LessonPaginator
@@ -11,7 +11,7 @@ class LessonListView(generics.ListAPIView):
     queryset = Lesson.objects.all()
     serializer_class = LessonListSerializer
     pagination_class = LessonPaginator
-    permission_classes = [IsOwnerOrStaff]
+    permission_classes = [IsAuthenticated]
 
 
 class LessonCreateView(generics.CreateAPIView):

@@ -9,7 +9,6 @@ from users.serilzers import PaymentSerializer, UserSerializer
 
 
 class PaymentViewSet(ModelViewSet):
-
     queryset = Payment.objects.all()
     serializer_class = PaymentSerializer
     filter_backends = (DjangoFilterBackend, OrderingFilter,)
@@ -18,7 +17,6 @@ class PaymentViewSet(ModelViewSet):
 
 
 class UserViewSet(ModelViewSet):
-
     queryset = User.objects.all()
     serializer_class = UserSerializer
 

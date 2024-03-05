@@ -9,7 +9,7 @@ from lessons.validators import UrlLinkCheckValidator
 class LessonSerializer(serializers.ModelSerializer):
     class Meta:
         model = Lesson
-        fields = ["name", "description", "preview_image", "video", "course", "user"]
+        fields = ["name", "description", "preview_image", "video", "course", "owner"]
         validators = [UrlLinkCheckValidator(field='video')]
 
 
@@ -18,4 +18,4 @@ class LessonListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Lesson
-        fields = ["name", "description", "preview_image", "video", "course", "user"]
+        fields = ["name", "description", "preview_image", "video", "course", "owner"]

@@ -13,7 +13,6 @@ class UrlLinkCheckValidator:
             if bool(re.match(r'https://www.youtube.com/', url_link_check)) is False:
                 raise ValidationError('Нельзя использовать стороннюю ссылку кроме youtube')
 
-
 # def validator_scam_url(value):
 #     """Валидация ссылки на материал"""
 #

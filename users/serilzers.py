@@ -23,21 +23,6 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ['id', 'email', 'password', 'phone', 'avatar', 'country', 'role']
 
 
-# class UserSerializer(serializers.ModelSerializer):
-#     email = serializers.EmailField()
-#
-#     class Meta:
-#         model = User
-#         fields = ['email']
-#
-#     def to_representation(self, instance):
-#         data = super().to_representation(instance)
-#         if not instance.is_authenticated:
-#             return data
-#         else:
-#             return {'id': None, 'email': None}
-
-
 class PaymentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Payment
