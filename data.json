@@ -1,0 +1,146 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$GpymKQNI17DJx9XVk2qBB6$XJsajMd6nMn4K61W4VX5anxUJqTSODIwzJqP+/u8Aok=",
+      "last_login": "2024-03-05T09:40:04Z",
+      "is_superuser": true,
+      "first_name": "Admin",
+      "last_name": "SkyPro",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-03-05T09:00:12Z",
+      "email": "admin@mail.com",
+      "phone": null,
+      "avatar": "",
+      "country": null,
+      "role": "moderator",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$CmxQCnE4DDEwWUzxoAqLtB$rgOr8uSCuxWF+pJaBxsNU49P/hsLeSQ8LsAmLvN7460=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-03-05T09:00:12.415Z",
+      "email": "user1@sky.com",
+      "phone": null,
+      "avatar": "",
+      "country": null,
+      "role": "member",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$Kiq9MdttSy4gnii8yu2s6c$Zc29N3alXRg1iOhuGKvn7AxsMPlE7XxvTChxGPeKbho=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-03-05T09:00:12.613Z",
+      "email": "user2@sky.com",
+      "phone": null,
+      "avatar": "",
+      "country": null,
+      "role": "member",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$uDwcRBQ7KaAghBp2z4Zta6$OH5UUBYk1YXl4fZwtivmt4EZVk5o9vw/dcH0ySkwiVQ=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-03-05T09:55:01.282Z",
+      "email": "damir_tt@mail.com",
+      "phone": "23459811",
+      "avatar": "",
+      "country": "Moscow",
+      "role": "member",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.payment",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "pay_date": "2024-03-05",
+      "pay_course": 1,
+      "pay_lesson": 1,
+      "money": 10,
+      "pay_method": "transfer"
+    }
+  },
+  {
+    "model": "users.payment",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "pay_date": "2024-03-05",
+      "pay_course": 2,
+      "pay_lesson": 2,
+      "money": 10,
+      "pay_method": "transfer"
+    }
+  },
+  {
+    "model": "users.payment",
+    "pk": 3,
+    "fields": {
+      "user": 2,
+      "pay_date": "2024-03-05",
+      "pay_course": 3,
+      "pay_lesson": 3,
+      "money": 10,
+      "pay_method": "cash"
+    }
+  },
+  {
+    "model": "users.payment",
+    "pk": 4,
+    "fields": {
+      "user": 3,
+      "pay_date": "2024-03-05",
+      "pay_course": 4,
+      "pay_lesson": 4,
+      "money": 10,
+      "pay_method": "cash"
+    }
+  },
+  {
+    "model": "users.payment",
+    "pk": 5,
+    "fields": {
+      "user": 3,
+      "pay_date": "2024-03-05",
+      "pay_course": 5,
+      "pay_lesson": 5,
+      "money": 10,
+      "pay_method": "transfer"
+    }
+  }
+]
